@@ -1,0 +1,147 @@
+
+  .main-book-details-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .book-detail-container {
+    display: flex;
+    max-width: 80%;
+    padding: 20px;
+    background-color: #ffffffce;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+  }
+   
+  .book-details-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .book-top-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+   
+  .book-top-section{
+    margin-left: 10px;
+  }
+
+  .books-image {
+    max-width: 17%;
+    margin-top:-20%;
+    margin-right: 20px;
+  }
+   
+  .book-info {
+    flex: auto;
+    margin-left: 7%;
+    margin-top:-8%;
+  }  
+
+
+  .book-title {
+    font-size: 2.0em;
+    margin-bottom: 5px;
+  }
+   
+  .book-category {
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  .book-Synopsis{
+    font-size: 1.6em;
+    /* margin-top: 0px; */
+  }
+   
+  .book-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+   
+   
+  }
+   
+  .book-price {
+    font-weight: bold;
+    color: #333;
+  }
+   
+  .book-availability {
+    color: #2ecc71;
+    font-size: 1.0em;
+    margin-top: -5px;
+    
+  }
+  .review-delivery{
+    margin-top: -1%;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-book-details-container {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .book-top-section {
+      margin-bottom: 15px;
+      flex-wrap:wrap
+    }
+    .book-top-section.books-image{
+      max-width: 100%; 
+      margin-bottom: 15px;
+    }
+    .book-info{
+      margin-left:0;
+    }
+    .book-availability{
+      margin-left:0;
+    }
+  }
+  
+  .additional-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 90%;
+    
+    
+    
+    
+  }
+   .info-box {
+    flex: 1;
+    margin-right: 20px; 
+    margin-top: 20px;
+    border: 0px solid #ccc;
+    padding-top: 10px;
+    background-color:#FAFAFA ;
+    border-radius: 7px; 
+  }
+  
+  .info-label {
+    font-weight:lighter;
+    color: #6B6B6B;
+    margin-left: 29%;
+    font-size: 0.9em;
+    font-style:sans-serif;
+    
+  }
+  .info-logo{
+    margin-left: 35%;
+    font-size: 1.4em;
+    margin-top: -11%;
+  }
+  
+  .info-value{
+    margin-left:25%;
+    font-weight: 550;
+   
+   
+  }

@@ -1,0 +1,105 @@
+.paymentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  width: 50%;
+}
+
+.paymentMain h4{
+  margin-top: 3%;
+}
+
+.receipt_container{
+  border: 2px solid #162938;
+  width: 90%;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.receipt_container h4{
+  margin-left: 1.3%;
+  font-weight: bolder;
+}
+.receiptmain_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.receiptright {
+  /* flex:0.2; */
+  margin-left: 300px;
+}
+
+
+.receipt_container label,
+.receipt_container span{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight:normal;
+}
+
+.receipt_container a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 550;
+}
+
+.payment-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.Payment_Method1,
+.Payment_Method2 {
+  width: 200px;
+  height: 150px;
+  margin: 10px; 
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Payment_Method1 img,
+.Payment_Method2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.QR_Container {
+  display: flex;
+  justify-content: center;
+}
+
+.QR img{
+  width: 200px;
+  height: 215px;
+}
+
+.Continue{
+  height: 35px;
+  width: 25%;
+  border: 2px solid #162938;
+  background: black;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+.Continue p{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 9px;
+}
+

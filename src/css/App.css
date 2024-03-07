@@ -1,0 +1,578 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* //////////// Header ///////////////// */
+
+
+/* //////////////// Navbar ///////////////// */
+.logo-div {
+  width: 18%;
+  margin-left: 10px;
+  margin-right: 1px;
+}
+
+.logo-img {
+  width: 150px;
+  height: 50px;
+}
+
+.main-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f5f5f6;
+  margin-bottom: 39px;
+  box-shadow: 5px 6px 5px #f5f5f6;
+}
+
+
+.search-bar .search-input, .search-icon {
+  color: #696e79;
+  background-color: #f5f5f6;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+}
+
+.search-input {
+  display: flex;
+  font-size: 13px;
+  width: 53vw;
+  height: 40px;
+  border: none;
+  margin-bottom:4px;
+  /* flex-grow: 1; */
+  border-radius: 3px 0px 0px 3px;
+
+}
+
+.search-input.active{
+  border-color: aliceblue;
+}
+
+.search-icon {
+    margin-right: 10px;
+    position: absolute;
+    top: 0px;
+    height: 41px;
+    right: 66px;
+    margin-bottom: 4px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    width: 29px;
+    padding-top: 10px;
+}
+
+.search-results-container {
+  max-height: 400px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /* max-width: 500px; */
+}
+
+@media(max-width:768px){
+  .main-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar{
+    margin-bottom: 10px;
+    width: 40%;
+    align-items: center;
+  }
+
+  .search-icon{
+    left: 5px;
+  }
+
+  .search-results-container{
+    width: 100%;
+  }
+/* 
+  /* .book-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+  } */ */
+
+  .searchbar-book-img img {
+    width: 40%;
+    height: auto;
+  } 
+
+  .search-results-container h5 {
+    margin: 5px 0; /* Adjust spacing as needed */
+    font-size: 10px; /* Adjust font size as needed */
+  }
+  
+  .search-results-container p{
+    font-size: 10px;
+  }
+}
+
+
+.searchbar-book-img:hover{
+  background-color: #f5f5f5;
+}
+
+.searchbar-book-img{
+  /* width: auto;
+  height: 90px;
+  margin-right: 0px;
+  overflow: hidden; */
+  margin-right: 10px;
+  width: 100px;
+}
+
+
+/* .author-name{
+  margin-left: 10px;
+} */
+
+.searchbar-book-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+h5{
+  flex-grow: 1;
+  margin: 0;
+}
+
+.icon-right {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+.icon-right button {
+  border: none;
+  background-color: #fff;
+}
+
+.nav-link{
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+.BiCartAdd {
+  margin-right: 5px;
+}
+ 
+/* Style for the total quantity */
+.totalquantity {
+  position: absolute;
+  top: -2px;
+  left: 16px;
+  font-weight: bold;
+  font-size: 0.5em;
+  color: #ff5733;
+}
+.menu-dropdown-btn {
+  display: none;
+}
+
+
+/* @media screen {
+  
+} */
+
+/* ///////////////// End of Navbar ///////////////////// */
+
+
+/* //////////////// Image Slider ////////////// */
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carouselExampleSlidesOnly {
+  margin-bottom: 55px;
+}
+
+/* //////////////////// End of Image Slider ///////////////////////// */
+
+
+/* /////////////GENRES ///////////// */
+.genre-title, .new-arrivals-title {
+  margin-left: 10px;
+  margin-top: 59px;
+  margin-bottom: 13px;
+  font-size: 2rem;
+  
+}
+
+.new-arrivals-title {
+  margin-top: 90px;
+  /* border: 1px solid black; */
+}
+
+.author-title {
+  font-size: 2rem;
+  margin-top: 62px;
+  margin-left: 10px;
+}
+
+.main-genre-container, .main-author-container {
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-genre-container {
+  border: 1px solid #838891;
+  border-left: white;
+  border-right: white;
+}
+
+.main-author-container .logo-and-text a img {
+  border: none;
+}
+
+.main-genre-container img {
+  border: 1px solid #838891;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  
+}
+
+.main-author-container img {
+  border: 1px solid #838891;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  
+}
+
+.main-genre-container .logo-and-text {
+  margin-right: 10px;
+}
+
+.main-genre-container .logo-text {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-genre-container .logo-and-text a {
+  color: #696e79;
+  text-decoration: none;
+}
+
+.main-author-container .logo-and-text a {
+  color: #696e79;
+  text-decoration: none;
+}
+
+
+/* ///////////  Best Sellers  ///////////// */
+.best-seller-main, .new-arrivals-main {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  justify-content: space-around;
+}
+.best-seller-main {
+  height:450px;
+  border: 1px solid #838891;
+  border-left: white;
+  border-top: white;
+  border-right: white;
+}
+.new-arrivals-main {
+  height: 200px;
+}
+.best-seller-title {
+  margin-top: 55px;
+  margin-left: 10px;
+}
+
+.new-arrivals-title {
+  margin-top: 55px;
+}
+
+
+.best-seller-items {
+  /* width: ; */
+  display: flex;
+  justify-content: space-around;
+  margin-right: 60px;
+}
+
+.best-seller-items .book-img img{
+  width: 150px;
+  height: 200px;
+}
+.best-seller-items .book-text {
+  /* flex-wrap: wrap; */
+  color: black;
+  margin-left: 100px;
+  margin-top: 18px; 
+}
+
+.best-seller-items .book-text p {
+  color: #696e79;
+  line-height: 0.5;
+}
+
+
+.best-seller-items a {
+  display: flex;
+  text-decoration: none;
+}
+
+/* .add-to-cart-btn {
+  background-color: orange;
+  font-size: 14px;
+  width: 120px;
+  height: 28px;
+  border-radius: 50px;
+  border: none;
+} */
+
+/* /////////////////////FOOTER//////////////////////////////// */
+
+.footer-main {
+  margin-top: 55px;
+  background-color: #2b2b2b;;
+  color: white;
+  
+}
+
+.footer-main .footer-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-main .footer-titles h5 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.footer-main .footer-titles h5 p {
+  margin: 0px;
+}
+
+.footer-main .footer-titles .footer-left-end-section {
+  margin-left: 10px;
+}
+
+.footer-main .footer-titles .footer-right-end-section {
+  margin-right: 10px;
+}
+.footer-titles a {
+  text-decoration: none;
+  color: white;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.payment-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-options img {
+  height: 50px;
+  width: 110px;
+  margin-left: 20px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-right: 10px;
+  width: 300px;
+  align-items: flex-end;
+  text-decoration: underline;
+}
+
+.mainDeliveryLocation {
+  border: 2px solid rgb(223, 216, 216);
+  width: 200px;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.mainDeliveryLocation .frontIconDelivery {
+  padding-right: 5px;
+}
+
+.mainDeliveryLocation .backIconDelivery {
+  padding-left: 18px;
+}
+
+.mainDeliveryLocation .dropDownBtn {
+  margin-left: 18px;
+  /* padding: 0px 5px; */
+  border:none;
+  background-color: #fff;
+}
+
+.deliveryLocation p {
+  line-height: 0.5;
+  font-size: 13px;
+  color: rgb(136, 134, 134);
+}
+
+.deliveryLocation .locationDescription {
+  line-height: 1;
+}
+
+.chooseLocationTime {
+  display: flex;
+  margin-top: 20px;
+}
+
+.deliveryDayEstimation {
+  display: flex;
+  margin-top: 13px;
+  border-bottom: 1px solid rgb(223, 219, 219);
+  padding-bottom: 5px;
+}
+
+.quantityPrice {
+  margin-top: 13px;
+}
+
+.quantityPrice .quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 243, 243);
+  padding: 0px 10px;
+  /* width: 180px; */
+  height: 45px;
+}
+
+.quantityPrice .quantity .quantityText {
+  margin-top: 8px;
+}
+
+.quantityPrice .quantity .addSub {
+  font-size: 20px;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDeliveryLocation .addToCartDelivery {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 13px;
+  border-radius: 3px;
+  border:none;
+  background-color: orange;
+}
+
+
+.review-delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.support {
+  text-align: center;
+}
+
+#about_section {
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 42px;
+}
+
+.aboutUs-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.aboutUs-main h4 {
+  margin-top: 20px;
+}
+
+.aboutUs-first-heading {
+  padding-top: 30px;
+}
+
+.aboutUs-main p {
+  color:#696e79;
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+
+.aboutUs-main p strong {
+  color: black;
+}
+
+
+/* Main Service Custom CSS */
+
+.main-ourServices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-ourServices .service-icon {
+  font-size: 150px;
+  margin-right: 90px;
+}
+.main-aboutUs-div h2 {
+  padding-top: 67px;
+  font-weight: 700;
+}
+

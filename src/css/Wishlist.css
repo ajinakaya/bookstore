@@ -1,0 +1,37 @@
+
+.wishlist {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.wishlist h2 {
+    color: #333;
+}
+  
+.wishlist ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+/* .wishlist-images {
+    margin-right: 10px;
+} */
+  
+.book-image__img {
+    width: 50px; 
+    height: 10px; 
+    border-radius: 4px;
+    object-fit: cover;
+}
+  
+
+  
